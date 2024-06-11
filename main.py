@@ -67,8 +67,8 @@ def animal_sound(animals):
     print(f"{animals.make_sound()}")
 
 
-animals = [Bird("Лебедь Гоша", "1 год", "Белый"), Mammal("Тигрица Мая", "2 года", "Лес"),
-           Reptile("Черепаха Тесс", "6 лет", "В воде")]
+animals = [Bird(name="Лебедь Гоша", age="1 год", colour="Белый"), Mammal(name="Тигрица Мая", age="2 года", area="Лес"),
+           Reptile(name="Черепаха Тесс", age="6 лет", life="В воде")]
 for animal in animals:
     animal_sound(animal)
 
@@ -134,9 +134,9 @@ class Vet(Staff):
         print(f"{self.name}, {self.job}, лечит животное")
 
 
-vet1 = Vet("Вика", "ветеринар")
+vet1 = Vet(name="Вика", job="ветеринар")
 vet1.heal_animal()
 
-zookeeper1 = Zookeeper("Антон", "кипер")
+zookeeper1 = Zookeeper(name="Антон", job="кипер")
 zookeeper1.feed_animal()
 
